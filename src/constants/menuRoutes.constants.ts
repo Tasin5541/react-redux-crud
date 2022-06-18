@@ -1,5 +1,5 @@
 import User from "../app/components/Users/Users";
-import Posts from "../App/components/Posts/Posts";
+import Posts from "../app/components/Posts/Posts";
 import AccountCircleOutlinedIcon from "@material-ui/icons/AccountCircleOutlined";
 import PostAddOutlinedIcon from "@material-ui/icons/PostAddOutlined";
 
