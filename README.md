@@ -17,6 +17,10 @@
 - **Email:** admin@xyz.com
 - **Password:** 123
 
+## Live Demo
+
+[Demo](https://ubiquitous-churros-81f169.netlify.app)
+
 ## Installation
 
 1. Clone/download repo
