@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  color: #353535;
+  font-family: "Roboto", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-flex-start {
+  align-items: flex-start;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.txt-red {
+  color: red;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.lineheight-1 {
+  line-height: 1;
+}
+
+.slds-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.15rem;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  line-height: 1;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+.iconBG {
+  background-color: #7f8de1;
+}
+
+.MuiFormControl-marginDense {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+.MuiInputBase-root {
+  font-size: 0.875rem !important;
+}
+
+.Mui-focused .MuiFormLabel-asterisk {
+  color: red !important;
+}
+
+.MuiDialogTitle-root .MuiTypography-h6 {
+  display: flex;
+}

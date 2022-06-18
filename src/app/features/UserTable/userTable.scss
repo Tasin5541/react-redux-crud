@@ -1,0 +1,98 @@
+.visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1;
+  margin: -1;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 20;
+  width: 1;
+}
+
+.toolbar-root {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 16px !important;
+  background-color: #f3f2f2;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.toolbar-title {
+  flex: 1 1 50%;
+}
+
+.toolbar-header-title {
+  font-size: 0.9rem;
+  font-weight: 1000;
+  margin-bottom: 1px;
+}
+
+.toolbar-formControl {
+  min-width: 10%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.table-heading-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.table-search {
+  margin-top: 4px !important;
+  background-color: white;
+
+  .MuiInputBase-adornedStart {
+    height: 2rem !important;
+    width: 100% !important;
+  }
+}
+
+.table-button {
+  height: 2rem;
+}
+
+.sticky-footer {
+  bottom: 0;
+  position: sticky;
+  z-index: 2;
+  background: white;
+}
+
+.action-button-conatiner {
+  min-width: 99px;
+
+  .MuiIconButton-root {
+    padding: 8px !important;
+  }
+}
+
+.table-body .MuiTableCell-sizeSmall {
+  padding: 0px 24px 0px 16px;
+}
+
+.table-container {
+  min-width: 100%;
+  overflow-y: auto;
+  max-height: calc(100vh - 70px);
+}
+
+.MuiTablePagination-toolbar {
+  padding-right: 13px !important;
+}
+
+@media (max-width: 560px) {
+  .table-container {
+    max-height: calc(100vh - 120px);
+  }
+  .MuiTablePagination-spacer {
+    flex: none !important;
+  }
+  .table-body .MuiTableCell-sizeSmall {
+    padding: 0px 0px 0px 16px;
+  }
+  body {
+    height: calc(100vh - 7px);
+  }
+}

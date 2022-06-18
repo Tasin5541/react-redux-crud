@@ -1,0 +1,240 @@
+@import "./loginVariables.scss";
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  input {
+    outline: none;
+    border: none;
+  }
+
+  input:focus {
+    border-color: transparent !important;
+  }
+
+  input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  input:focus:-moz-placeholder {
+    color: transparent;
+  }
+  input:focus::-moz-placeholder {
+    color: transparent;
+  }
+  input:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $login-input-placeholder-color;
+  }
+  input:-moz-placeholder {
+    color: $login-input-placeholder-color;
+  }
+  input::-moz-placeholder {
+    color: $login-input-placeholder-color;
+  }
+  input:-ms-input-placeholder {
+    color: $login-input-placeholder-color;
+  }
+
+  button {
+    outline: none !important;
+    border: none;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+}
+
+.container-login {
+  width: 100%;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: $login-background-color;
+}
+
+.wrap-login {
+  width: 960px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 177px 130px 177px 95px;
+}
+
+.login-pic {
+  width: 316px;
+}
+
+.login-pic img {
+  max-width: 100%;
+}
+
+.login-form {
+  width: 290px;
+}
+
+.login-form-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+
+  width: 100%;
+  display: block;
+  padding-bottom: 54px;
+}
+
+.wrap-input {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.input {
+  font-size: 15px;
+  line-height: 1.5;
+  color: $login-symbol-color;
+
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 68px;
+}
+
+.focus-input {
+  display: block;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px 0px;
+  color: $login-input-focus-color;
+}
+
+.input:focus + .focus-input {
+  -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+  animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
+
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
+
+.symbol-input {
+  font-size: 15px;
+
+  align-items: center;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 35px;
+  pointer-events: none;
+  color: $login-symbol-color;
+
+  transition: all 0.4s;
+}
+
+.input:focus + .focus-input + .symbol-input {
+  color: $login-button-color;
+  padding-left: 28px;
+}
+
+.container-login-form-btn {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.login-form-btn {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: $login-button-color;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  transition: all 0.4s;
+}
+
+.login-form-btn:hover {
+  background: #333333;
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 992px) {
+  .wrap-login {
+    padding: 177px 90px 177px 85px;
+  }
+
+  .login-pic {
+    width: 35%;
+  }
+
+  .login-form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-login {
+    padding: 100px 80px 100px 80px;
+  }
+
+  .login-pic {
+    display: none;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-login {
+    padding: 100px 15px 100px 15px;
+  }
+}
