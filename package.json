@@ -12,6 +12,9 @@
     "starter",
     "boilerplate"
   ],
+  "engines": {
+    "node": "14.x"
+  },
   "author": "Miftaul Mannan",
   "license": "MIT",
   "repository": {
