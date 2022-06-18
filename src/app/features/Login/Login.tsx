@@ -42,7 +42,7 @@ const Login = () => {
             <span className="txt-red">{loginError}</span>
 
             <div className="wrap-input">
-              <input {...register("email")} className="input" type="text" name="email" placeholder="Email" required />
+              <input {...register("email")} className="input" type="email" name="email" placeholder="Email" required />
               <span className="focus-input"></span>
               <span className="symbol-input d-flex">
                 <EmailIcon fontSize="small" />
