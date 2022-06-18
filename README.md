@@ -1,4 +1,4 @@
-# React Webpack Typescript Boilerplate
+# React Redux CRUD
 
 - **[React](https://facebook.github.io/react/)** (17.x)
 - **[Webpack](https://webpack.js.org/)** (5.x)
@@ -11,6 +11,11 @@
 - [SASS](http://sass-lang.com/) support
 - Code linting ([ESLint](https://github.com/eslint/eslint)) and formatting ([Prettier](https://github.com/prettier/prettier))
 - Supports both JavaScript and TypeScript
+
+## Login Credentials
+
+- **Email:** admin@xyz.com
+- **Password:** 123
 
 ## Installation
 
@@ -46,10 +51,3 @@
 | `yarn run lint`       | Run linter                                                                     |
 | `yarn run lint --fix` | Run linter and fix issues                                                      |
 | `yarn run start`      | (alias of `yarn run start-dev`)                                                |
-
-**Note**: replace `yarn` with `npm` in `package.json` if you use npm.
-
-## Reference
-
-- [React Webpack Typescript Starter](https://github.com/vikpe/react-webpack-typescript-starter)
-- [Create React App](https://github.com/facebook/create-react-app)
