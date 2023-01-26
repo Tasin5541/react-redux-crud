@@ -1,5 +1,5 @@
 {
-  "name": "react-webpack-typescript-boilerplate",
+  "name": "react-redux-crud",
   "version": "0.1.0",
   "description": "Boilerplate for React, Webpack (with Hot Module Replacement), Typescript and Babel.",
   "keywords": [
